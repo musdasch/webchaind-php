@@ -1,0 +1,23 @@
+{
+  "name": "musdasch/webchaind-php",
+  "description": "Webchaind php interface.",
+  "type": "library",
+  "license": "WTFPL",
+  "authors": [
+    {
+      "name": "musdasch",
+      "email": "musdasch@gmail.com"
+    }
+  ],
+  "minimum-stability":"dev",
+  "autoload": {
+    "psr-4": {
+      "Webchaind\\": "src/"
+    }
+  },
+  "require": {
+    "guzzlehttp/promises": "dev-master",
+    "litipk/php-bignumbers": "dev-master",
+    "sc0vu/web3.php": "dev-master"
+  }
+}
