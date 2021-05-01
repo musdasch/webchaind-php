@@ -1,6 +1,8 @@
 # webchaind-php
 Webchaind php interface.
 
+**Note:** This project is work in progress don't use it in a productive environment.
+
 # Install
 
 ToDo
