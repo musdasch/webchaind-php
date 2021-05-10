@@ -4,8 +4,25 @@ Webchaind php interface.
 **Note:** This project is work in progress don't use it in a productive environment.
 
 # Install
+Add the following to your composer.json
+```json
+{
+    [...],
+    "minimum-stability":"dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/musdasch/webchaind-php.git"
+        }
+    ],
+    [...]
+}
+```
 
-ToDo
+Then you can install the package like this:
+```bash
+composer require  musdasch/webchaind-php
+```
 
 # Usage
 
