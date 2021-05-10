@@ -15,9 +15,20 @@
       "Webchaind\\": "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Test\\": "test/"
+    }
+  },
   "require": {
     "guzzlehttp/promises": "dev-master",
     "litipk/php-bignumbers": "dev-master",
     "sc0vu/web3.php": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9"
+  },
+  "scripts": {
+    "test": "./vendor/bin/phpunit test"
   }
 }
