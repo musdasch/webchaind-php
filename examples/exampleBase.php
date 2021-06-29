@@ -1,4 +1,8 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 require '../vendor/autoload.php';
 
 use Webchaind\Webchaind;
@@ -6,7 +10,7 @@ use Webchaind\ERC20;
 use Webchaind\Account;
 use Webchaind\ERC20Account;
 
-$webchaind = new Webchaind('http://localhost:8545');
+$webchaind = new Webchaind('https://node1.mintme.com:443');
 
 $erc20 = new ERC20(
 	$webchaind,
