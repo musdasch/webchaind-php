@@ -75,6 +75,7 @@ $balance = $erc20Account->getBalance();
 $balance = $erc20Account->toToken($balance)
 echo 'Total Supply: ' . $balance . PHP_EOL;
 ```
+If you using php8 place use `composer install --ignore-platform-reqs`
 
 # License
 WTFPL
