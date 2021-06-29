@@ -10,7 +10,7 @@ use Webchaind\ERC20;
 use Webchaind\Account;
 use Webchaind\ERC20Account;
 
-$webchaind = new Webchaind('https://node1.mintme.com:443');
+$webchaind = new Webchaind('http://localhost:8545');
 
 $erc20 = new ERC20(
 	$webchaind,
@@ -20,13 +20,13 @@ $erc20 = new ERC20(
 
 $account = new Account(
 	$webchaind,
-	'0x0000000000000000000000000000000000000001',
+	'0x9876e428c88e8D120F1805f75059787609dDE941',
 	'PASSWORD'
 );
 
 $erc20Account = new ERC20Account(
 	$erc20,
 	$webchaind,
-	'0x0000000000000000000000000000000000000001',
+	'0x9876e428c88e8D120F1805f75059787609dDE941',
 	'PASSWORD'
 );

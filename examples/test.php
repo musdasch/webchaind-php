@@ -1,4 +1,5 @@
 <?php
 require('./exampleBase.php');
 
-print_r($account);
+$account->findLatestTransactions(gmp_init(0));
+print_r($account->getTransactionList());
