@@ -118,10 +118,9 @@ class Account
 		return gmp_init((string) $promise->wait());
 	}
 
-	private function findLatestTransactions(int $blockCount)
+	public function findLatestTransactions(GMP $toBlock)
 	{
 		$blockNumber = $this->getBlockNumber();
-		$toBlock = gmp_sub($blockNumber, gmp_init($blockCount));
 		$address = $this->address;
 		$transactionList = &$this->transactionList;
 

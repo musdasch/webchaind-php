@@ -30,6 +30,10 @@ composer require  musdasch/webchaind-php
 ```bash
 webchaind --fast --rpc --rpc-api "eth,net,web3,personal" --rpc-port 8545 --rpc-cors-domain "*"
 ```
+Since webchaind got updated you have to start it with geth.
+```bash
+geth --syncmode=fast --mintme --http --http.api "eth,net,web3,personal" --http.port 8545 --http.corsdomain "*"
+```
 
 ### New instance
 ```php
@@ -92,6 +96,7 @@ $balance = $erc20Account->getBalance();
 $balance = $erc20Account->toToken($balance)
 echo 'Total Supply: ' . $balance . PHP_EOL;
 ```
+If you using php8 place use `composer install --ignore-platform-reqs`
 
 # License
 WTFPL

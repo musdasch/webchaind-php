@@ -1,4 +1,8 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 require '../vendor/autoload.php';
 
 use Webchaind\Webchaind;
@@ -16,13 +20,13 @@ $erc20 = new ERC20(
 
 $account = new Account(
 	$webchaind,
-	'0x0000000000000000000000000000000000000001',
+	'0x9876e428c88e8D120F1805f75059787609dDE941',
 	'PASSWORD'
 );
 
 $erc20Account = new ERC20Account(
 	$erc20,
 	$webchaind,
-	'0x0000000000000000000000000000000000000001',
+	'0x9876e428c88e8D120F1805f75059787609dDE941',
 	'PASSWORD'
 );
