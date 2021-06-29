@@ -13,6 +13,10 @@ ToDo
 ```bash
 webchaind --fast --rpc --rpc-api "eth,net,web3,personal" --rpc-port 8545 --rpc-cors-domain "*"
 ```
+Since webchaind got updated you have to start it with geth.
+```bash
+geth --syncmode=fast --mintme --http --http.api "eth,net,web3,personal" --http.port 8545 --http.corsdomain "*"
+```
 
 ### New instance
 ```php
